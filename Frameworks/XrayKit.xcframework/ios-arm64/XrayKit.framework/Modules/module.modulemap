@@ -1,0 +1,8 @@
+framework module "XrayKit" {
+	header "ref.h"
+    header "Xraykit.objc.h"
+    header "Universe.objc.h"
+    header "XrayKit.h"
+
+    export *
+}
