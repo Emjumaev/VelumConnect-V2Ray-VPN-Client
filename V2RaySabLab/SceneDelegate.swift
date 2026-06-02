@@ -9,11 +9,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = scene as? UIWindowScene else { return }
         let window = UIWindow(windowScene: windowScene)
         window.rootViewController = UIHostingController(rootView: ConnectView())
-        window.overrideUserInterfaceStyle = .dark
+        // Inherit system appearance — light or dark.
         self.window = window
         window.makeKeyAndVisible()
-        
-        print("xxxxx")
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {}
