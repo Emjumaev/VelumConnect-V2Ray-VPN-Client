@@ -353,7 +353,7 @@
 				DEVELOPMENT_TEAM = R37J42Q9W7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = V2RaySabLab/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "SAB VPN";
+				INFOPLIST_KEY_CFBundleDisplayName = "Velum Connect";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan VLESS QR codes when adding a new configuration.";
@@ -390,7 +390,7 @@
 				DEVELOPMENT_TEAM = R37J42Q9W7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = V2RaySabLab/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "SAB VPN";
+				INFOPLIST_KEY_CFBundleDisplayName = "Velum Connect";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan VLESS QR codes when adding a new configuration.";
