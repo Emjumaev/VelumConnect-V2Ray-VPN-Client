@@ -91,6 +91,14 @@ enum L10n {
         case clipboardEmpty
         case cameraDenied
         case language
+        case privacyTitle
+        case privacyNoLogging
+        case privacyLocalConfigs
+        case privacyRoutingOnly
+        case privacyNoThirdParty
+        case privacyAgreeContinue
+        case dataPrivacy
+        case done
     }
 
     private static let dict: [Key: [AppLanguage: String]] = [
@@ -193,6 +201,46 @@ enum L10n {
             .en: "Language",
             .ru: "Язык",
             .uz: "Til",
+        ],
+        .privacyTitle: [
+            .en: "Your Privacy",
+            .ru: "Ваша конфиденциальность",
+            .uz: "Maxfiyligingiz",
+        ],
+        .privacyNoLogging: [
+            .en: "This app does not collect, log, inspect, or transmit your browsing history, DNS queries, network traffic content, or IP address.",
+            .ru: "Приложение не собирает, не записывает, не анализирует и не передаёт историю посещений, DNS-запросы, содержимое сетевого трафика или ваш IP-адрес.",
+            .uz: "Ilova brauzer tarixingizni, DNS so‘rovlaringizni, tarmoq trafigi mazmunini yoki IP-manzilingizni yig‘maydi, yozib olmaydi, tekshirmaydi va uzatmaydi.",
+        ],
+        .privacyLocalConfigs: [
+            .en: "VPN server configurations you add are stored only on this device and are never uploaded to our servers.",
+            .ru: "Добавленные вами конфигурации VPN-серверов хранятся только на этом устройстве и никогда не загружаются на наши серверы.",
+            .uz: "Siz qo‘shgan VPN-server konfiguratsiyalari faqat shu qurilmada saqlanadi va hech qachon serverlarimizga yuklanmaydi.",
+        ],
+        .privacyRoutingOnly: [
+            .en: "We use the VPN connection solely to route your traffic to the server you configure.",
+            .ru: "VPN-соединение используется исключительно для маршрутизации вашего трафика на выбранный вами сервер.",
+            .uz: "VPN ulanishi faqat trafigingizni siz sozlagan serverga yo‘naltirish uchun ishlatiladi.",
+        ],
+        .privacyNoThirdParty: [
+            .en: "The app contains no advertising, tracking, or analytics SDKs, and shares no data with third parties.",
+            .ru: "В приложении нет рекламы, трекеров и аналитических SDK; данные не передаются третьим лицам.",
+            .uz: "Ilovada reklama, kuzatuv yoki analitika SDK’lari yo‘q; ma’lumotlar uchinchi tomonlarga berilmaydi.",
+        ],
+        .privacyAgreeContinue: [
+            .en: "I Agree and Continue",
+            .ru: "Принимаю и продолжаю",
+            .uz: "Roziman va davom etaman",
+        ],
+        .dataPrivacy: [
+            .en: "Data & Privacy",
+            .ru: "Данные и конфиденциальность",
+            .uz: "Ma’lumotlar va maxfiylik",
+        ],
+        .done: [
+            .en: "Done",
+            .ru: "Готово",
+            .uz: "Tayyor",
         ],
     ]
 }

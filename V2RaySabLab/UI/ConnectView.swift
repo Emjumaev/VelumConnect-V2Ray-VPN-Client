@@ -6,6 +6,7 @@ struct ConnectView: View {
     @StateObject private var lang = LanguageStore()
 
     @State private var addMode: AddConfigView.Mode?
+    @State private var showPrivacy = false
 
     var body: some View {
         ZStack {
@@ -68,6 +69,18 @@ struct ConnectView: View {
             AddConfigView(mode: mode, store: store)
                 .environmentObject(lang)
         }
+        .sheet(isPresented: $showPrivacy) {
+            NavigationStack {
+                PrivacyDisclosureView()
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button(L10n.t(.done, lang.language)) { showPrivacy = false }
+                        }
+                    }
+            }
+            .environmentObject(lang)
+        }
     }
 
     // MARK: - Top bar (language switcher + plus menu)
@@ -86,6 +99,12 @@ struct ConnectView: View {
                 ForEach(AppLanguage.allCases) { l in
                     Text("\(l.flag)  \(l.displayName)").tag(l)
                 }
+            }
+            Divider()
+            Button {
+                showPrivacy = true
+            } label: {
+                Label(L10n.t(.dataPrivacy, lang.language), systemImage: "lock.shield")
             }
         } label: {
             ZStack {
