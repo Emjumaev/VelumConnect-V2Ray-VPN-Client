@@ -1,4 +1,4 @@
-# Velum Connect (V2RaySabLab)
+# Velum Connect
 
 An iOS VPN client built on [Xray-core](https://github.com/XTLS/Xray-core), supporting the VLESS protocol with REALITY, TLS, and multiple transports (XHTTP, TCP, WebSocket, gRPC).
 
